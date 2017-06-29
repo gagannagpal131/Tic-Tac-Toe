@@ -12,6 +12,9 @@
 		769F7C891D1FB276000B019A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C871D1FB276000B019A /* Main.storyboard */; };
 		769F7C8B1D1FB276000B019A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C8A1D1FB276000B019A /* Assets.xcassets */; };
 		769F7C8E1D1FB276000B019A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C8C1D1FB276000B019A /* LaunchScreen.storyboard */; };
+		769F7C9A1D1FB376000B019A /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C971D1FB376000B019A /* board.png */; };
+		769F7C9B1D1FB376000B019A /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C981D1FB376000B019A /* cross.png */; };
+		769F7C9C1D1FB376000B019A /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 769F7C991D1FB376000B019A /* nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		769F7C8A1D1FB276000B019A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		769F7C8D1D1FB276000B019A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		769F7C8F1D1FB276000B019A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769F7C971D1FB376000B019A /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		769F7C981D1FB376000B019A /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		769F7C991D1FB376000B019A /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				769F7C831D1FB276000B019A /* AppDelegate.swift */,
 				769F7C851D1FB276000B019A /* ViewController.swift */,
 				769F7C871D1FB276000B019A /* Main.storyboard */,
+				769F7C971D1FB376000B019A /* board.png */,
+				769F7C981D1FB376000B019A /* cross.png */,
+				769F7C991D1FB376000B019A /* nought.png */,
 				769F7C8A1D1FB276000B019A /* Assets.xcassets */,
 				769F7C8C1D1FB276000B019A /* LaunchScreen.storyboard */,
 				769F7C8F1D1FB276000B019A /* Info.plist */,
@@ -97,6 +106,11 @@
 					769F7C7F1D1FB275000B019A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = JP9FFSKWS4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -123,6 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769F7C9B1D1FB376000B019A /* cross.png in Resources */,
+				769F7C9A1D1FB376000B019A /* board.png in Resources */,
+				769F7C9C1D1FB376000B019A /* nought.png in Resources */,
 				769F7C8E1D1FB276000B019A /* LaunchScreen.storyboard in Resources */,
 				769F7C8B1D1FB276000B019A /* Assets.xcassets in Resources */,
 				769F7C891D1FB276000B019A /* Main.storyboard in Resources */,
@@ -251,9 +268,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gagan.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,9 +281,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gagan.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -287,6 +308,7 @@
 				769F7C941D1FB276000B019A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
